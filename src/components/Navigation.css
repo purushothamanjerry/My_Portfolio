@@ -1,0 +1,57 @@
+/* NAV BAR */
+.nav {
+  position: absolute;
+  top: 30px;
+  right: 60px;
+}
+
+/* LIST */
+.nav ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* LINKS */
+.nav ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 8px 16px;
+  border-radius: 12px;
+  transition: 
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.nav ul li a:hover {
+  background: rgba(199, 125, 255, 0.18);
+  color: #ffffff;
+  box-shadow: 0 0 18px rgba(199, 125, 255, 0.5);
+}
+
+/* ACTIVE STATE (future use) */
+.nav ul li a.active {
+  background: rgba(199, 125, 255, 0.28);
+  color: #ffffff;
+  box-shadow: 0 0 22px rgba(199, 125, 255, 0.8);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .nav {
+    position: static;
+    margin-bottom: 40px;
+  }
+
+  .nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+}

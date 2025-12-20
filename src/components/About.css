@@ -1,0 +1,114 @@
+.about-section {
+  padding: 80px 60px 100px; /* clean spacing */
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 0, 20, 0) 0%,
+    #ffffff 100%
+  );
+}
+
+
+/* TITLE */
+.about-title {
+  font-size: 44px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #4b0082;
+}
+
+/* CONTAINER */
+.about-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* SUB HEADING */
+.about-content h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #2a003d;
+}
+
+/* SUMMARY TEXT */
+.about-summary {
+  font-size: 17px;
+  line-height: 1.75;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.about-summary span {
+  color: #7b2cbf;
+  font-weight: 600;
+}
+
+/* TECHNOLOGIES */
+.about-tech {
+  margin-top: 36px;
+}
+
+.about-tech h3 {
+  font-size: 22px;
+  margin-bottom: 18px;
+  color: #2a003d;
+}
+
+.about-tech ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+.about-tech ul li {
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-size: 15px;
+  background: #f4effa;             /* ✅ light chip */
+  color: #4b0082;
+  box-shadow: none;                /* 🔥 remove heavy glow */
+}
+
+/* ROLE BANNER */
+.about-role {
+  margin-top: 36px;
+  font-size: 17px;
+  padding: 16px 22px;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    #e9d8fd,
+    #f3e8ff
+  );
+  color: #4b0082;
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 50px 24px 80px;
+  }
+
+  .about-title {
+    font-size: 34px;
+  }
+
+  .about-content h2 {
+    font-size: 22px;
+  }
+}

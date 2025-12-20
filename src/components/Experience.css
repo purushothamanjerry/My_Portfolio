@@ -1,0 +1,186 @@
+/* =========================
+   EXPERIENCE SECTION
+========================= */
+
+.experience-section {
+  padding: 120px 60px;
+  color: white;
+
+  /* Slightly deeper than Projects */
+  background: linear-gradient(
+    180deg,
+    #14001f 0%,
+    #0b0014 100%
+  );
+
+  position: relative;
+}
+
+/* Soft separator from previous section */
+.experience-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: linear-gradient(
+    to top,
+    rgba(11, 0, 20, 0),
+    #1a002b
+  );
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.experience-title {
+  font-size: 46px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   TIMELINE CONTAINER
+========================= */
+
+.timeline {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+  padding-left: 40px;
+}
+
+/* Vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    #c77dff,
+    rgba(199, 125, 255, 0.12)
+  );
+}
+
+/* =========================
+   TIMELINE ITEM
+========================= */
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+/* Dot */
+.timeline-dot {
+  position: absolute;
+  left: 4px;
+  top: 28px;
+  width: 16px;
+  height: 16px;
+  background: #c77dff;
+  border-radius: 50%;
+  box-shadow: 0 0 14px rgba(199, 125, 255, 0.8);
+}
+
+/* =========================
+   CARD
+========================= */
+
+.timeline-card {
+  max-width: 720px;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 32px 36px;
+  border-radius: 22px;
+
+  /* reduced bleed */
+  box-shadow: 0 0 22px rgba(199, 125, 255, 0.16);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 30px rgba(199, 125, 255, 0.32);
+}
+
+/* =========================
+   TEXT HIERARCHY
+========================= */
+
+.timeline-card h2 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.timeline-card h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Date badge */
+.timeline-date {
+  display: inline-block;
+  margin: 12px 0 18px;
+  padding: 6px 14px;
+  font-size: 14px;
+  color: #c77dff;
+  border-radius: 20px;
+  background: rgba(199, 125, 255, 0.15);
+}
+
+/* Description */
+.timeline-card p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 16px;
+}
+
+/* Bullet list */
+.timeline-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.timeline-card ul li {
+  font-size: 15px;
+  margin-bottom: 10px;
+  padding-left: 22px;
+  position: relative;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.timeline-card ul li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #c77dff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 90px 30px;
+  }
+
+  .experience-title {
+    font-size: 38px;
+  }
+
+  .timeline {
+    padding-left: 30px;
+  }
+}
