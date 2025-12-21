@@ -2,6 +2,15 @@ import React from "react";
 import "./Projects.css";
 
 const Projects = () => {
+
+  const openProject = (url) => {
+    if (!url) {
+      alert("Source code not available yet");
+      return;
+    }
+    window.open(url, "_blank");
+  };
+
   return (
     <section className="projects-section" id="projects">
       <h1 className="projects-title">My Projects</h1>
@@ -21,7 +30,9 @@ const Projects = () => {
             deployment.
           </p>
           <span className="project-status">Backend Developer</span>
-          <button>View Project</button>
+          <button onClick={() => openProject(null)}>
+            View Project
+          </button>
         </div>
 
         {/* Card 2 */}
@@ -35,7 +46,15 @@ const Projects = () => {
             authenticate, and cast votes using PHP backend and MySQL database.
           </p>
           <span className="project-status">Backend Developer</span>
-          <button>View Project</button>
+          <button
+            onClick={() =>
+              openProject(
+                "https://github.com/ganeshkandhan17/MyVote"
+              )
+            }
+          >
+            View Project
+          </button>
         </div>
 
         {/* Card 3 */}
@@ -49,7 +68,15 @@ const Projects = () => {
             core Java and object-oriented programming principles.
           </p>
           <span className="project-status">Java Developer</span>
-          <button>View Project</button>
+          <button
+            onClick={() =>
+              openProject(
+                "https://github.com/purushothamanjerry/mindbridge/tree/main/Miniproject"
+              )
+            }
+          >
+            View Project
+          </button>
         </div>
 
       </div>
