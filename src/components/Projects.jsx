@@ -48,9 +48,7 @@ const Projects = () => {
           <span className="project-status">Backend Developer</span>
           <button
             onClick={() =>
-              openProject(
-                "https://github.com/ganeshkandhan17/MyVote"
-              )
+              openProject("https://github.com/ganeshkandhan17/MyVote")
             }
           >
             View Project
@@ -72,6 +70,28 @@ const Projects = () => {
             onClick={() =>
               openProject(
                 "https://github.com/purushothamanjerry/mindbridge/tree/main/Miniproject"
+              )
+            }
+          >
+            View Project
+          </button>
+        </div>
+
+        {/* Card 4 */}
+        <div className="project-card">
+          <div className="project-image">
+            <span>🧮</span>
+          </div>
+          <h2>Flutter Calculator App</h2>
+          <p>
+            A simple and beautiful calculator app built using Flutter that
+            supports basic arithmetic operations with a clean and responsive UI.
+          </p>
+          <span className="project-status">Flutter Developer</span>
+          <button
+            onClick={() =>
+              openProject(
+                "https://github.com/purushothamanjerry/Anroide-app/tree/main/Calculator"
               )
             }
           >
