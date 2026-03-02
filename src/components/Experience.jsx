@@ -8,30 +8,29 @@ const Experience = () => {
 
       <div className="timeline">
 
-        {/* Current Role */}
-        <div className="timeline-item">
-          <span className="timeline-dot"></span>
+{/* Current Role */}
+<div className="timeline-item">
+  <span className="timeline-dot"></span>
 
-          <div className="timeline-card">
-            <h2>Associate Software Developer</h2>
-            <h3>LetNext Technologies</h3>
-            <span className="timeline-date">Oct 2024 – Present</span>
+  <div className="timeline-card">
+    <h2>Graduate Studies Programr</h2>
+    <h3>Zoho Schools of Learning</h3>
+    <span className="timeline-date">Jan 2026 – Present</span>
 
-            <p>
-              Working as a Backend Developer, responsible for designing,
-              developing, and maintaining backend services using Java and
-              Spring Boot. Actively involved in REST API development,
-              database operations, and deployment workflows.
-            </p>
+    <p>
+      Currently undergoing incubation training in the Graduate Studies Program
+      at Zoho Schools of Learning, focusing on full stack development and
+      industry-level software practices.
+    </p>
 
-            <ul>
-              <li>Designed and maintained RESTful APIs</li>
-              <li>Worked with MongoDB and MySQL databases</li>
-              <li>Used Docker for containerization and deployments</li>
-              <li>Collaborated with team members to ensure code quality</li>
-            </ul>
-          </div>
-        </div>
+    <ul>
+      <li>Studying Java, HTML, CSS, DBMS, DSA, and JDBC</li>
+      <li>Learning full stack development concepts and real-world practices</li>
+      <li>Collaborating with teammates and college peers</li>
+      <li>Learning from experienced developers and contributing to projects</li>
+    </ul>
+  </div>
+</div>
 
         {/* Internship */}
         <div className="timeline-item">
