@@ -1,34 +1,42 @@
 import React from "react";
 import Navigation from "./Navigation";
 import "./HeaderSection.css";
+import profileImg from "../assets/profile.jpeg"; // 👈 add your image path
 
 const HeaderSection = () => {
   return (
     <header className="header-section" id="home">
 
-      <div className="header-content">
-        <h1 className="header-name">Purushothaman S</h1>
+      <div className="header-wrapper"> {/* NEW wrapper */}
 
-        <h2 className="header-role">
-          Backend Developer <span>| Java / Spring Boot</span>
-        </h2>
+        <div className="header-content">
+          <h1 className="header-name">Purushothaman S</h1>
 
-        <p className="header-summary">
-          Backend Developer with hands-on experience in building secure and
-          scalable REST APIs using Spring Boot and MongoDB. Currently working
-          as an Associate Software Developer at LetNext Technologies, focusing
-          on backend development, API design, and deployment.
-        </p>
+          <h2 className="header-role">
+            Backend Developer <span>| Java / Spring Boot</span>
+          </h2>
 
-        <div className="header-actions">
-          <a href="#projects" className="btn-primary">
-            View Projects
-          </a>
+          <p className="header-summary">
+            Backend Developer with hands-on experience in building secure and
+            scalable REST APIs using Spring Boot and MongoDB.
+          </p>
 
-          <a href="#contact" className="btn-secondary">
-            Contact Me
-          </a>
+          <div className="header-actions">
+            <a href="#projects" className="btn-primary">
+              View Projects
+            </a>
+
+            <a href="#contact" className="btn-secondary">
+              Contact Me
+            </a>
+          </div>
         </div>
+
+        {/* PROFILE IMAGE */}
+        <div className="profile-container">
+          <img src={profileImg} alt="Profile" className="profile-image" />
+        </div>
+
       </div>
     </header>
   );
