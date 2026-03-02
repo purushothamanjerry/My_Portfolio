@@ -13,7 +13,7 @@ const Experience = () => {
   <span className="timeline-dot"></span>
 
   <div className="timeline-card">
-    <h2>Graduate Studies Programr</h2>
+    <h2>Graduate Studies Programe</h2>
     <h3>Zoho Schools of Learning</h3>
     <span className="timeline-date">Jan 2026 – Present</span>
 
