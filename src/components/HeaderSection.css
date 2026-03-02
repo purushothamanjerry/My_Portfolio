@@ -113,3 +113,42 @@
     align-items: flex-start;
   }
 }
+
+/* HEADER WRAPPER (TEXT + IMAGE SIDE BY SIDE) */
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* PROFILE IMAGE CONTAINER */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ROUND IMAGE */
+.profile-image {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(199, 125, 255, 0.7);
+  box-shadow: 0 0 40px rgba(199, 125, 255, 0.5);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .header-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+}
